@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background: #160D4A;
+    color: #fff;
+}
+
+header {
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 12%;
+    transition: all .2s ease;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 9rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2rem 0;
+    margin: 0px 1rem;
+    transition: all .2s ease;
+}
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+.user:hover {
+    color: #FF00F5;
+}
+
+.user img {
+    margin-right: 0.5rem;
+
+}
+
+.cadastrar {
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    border: 1px solid #FF00F5;
+    transition: all .5s ease;
+}
+
+.cadastrar:hover {
+    background: #FF00F5;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 1rem 0;
+        margin: 0px 0.5rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: #0D002C;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+
+    .main a {
+        margin-left: 0rem;
+    }
+
+    .cadastrar {
+        padding: 0.8rem 1rem;
+    }
+}
+
+/*Tamanho mobile*/
+
+

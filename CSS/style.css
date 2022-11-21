@@ -1,1 +1,139 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
 
+.nav-cursos {
+    width: 100%;
+    background: #240C5C;
+
+}
+
+.nav-cursos .cursos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 1rem 10%;
+    line-height: 2rem;
+}
+
+.nav-cursos .cursos li a {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 1rem;
+    transition: all .50s ease;
+}
+
+.nav-cursos .cursos li a:hover {
+    opacity: 70%;
+}
+
+.header-color--link {
+    border-bottom: 2px solid;
+    width: 15px;
+    margin-left: 1rem;
+    margin-top: -5px;
+}
+
+.landing-curso {
+    width: 100%;
+    background-image: url(/Images/bannerprogramacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-curso .content {
+    padding: 3rem;
+}
+
+.texto {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.titulo {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.titulo span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.landing-curso .content .texto {
+    margin: 0.8rem 0 3.5rem 0;
+}
+
+.landing-curso .content a {
+    padding: 0.5rem 2.3rem;
+    background: #FF00F5;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* .landing-curso .content a:hover {
+    transform: translateY(42px);
+} */
+
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 1100px)  {
+    .nav-cursos .cursos li a {
+        font-size: 1rem;
+        margin: 0 2rem;
+    }
+
+    .header-color--link {
+        border-bottom: 2px solid;
+        width: 15px;
+        margin-left: 2rem;
+    }
+
+    .landing-curso {
+        height: none;
+    }
+
+    .landing-curso .content .texto {
+        width: 40%;
+    }
+
+    .texto {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .titulo span {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .landing-curso .content {
+        padding: 3rem 10rem;
+    }
+}

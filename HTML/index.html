@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conect.si | Home page</title>
 
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="/Images/conect-si_icon_gradiente.svg"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+        <a href="index.html" class="logo"><img src="/Images/logo_gradiente.svg" alt="Logo"></a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="login.html" class="user"><img src="/Images/entrar-icon.svg" alt="Entrar">Entrar</a>
+            <a href="login.html" class="cadastrar">Cadastrar</a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- HEADER CURSOS -->
+
+    <menu class="nav-cursos">
+        <ul class="cursos">
+            <li><a class="link-1" href="#">Programação</a><div class="header-color--link" style="color: #FF00F5;"></div></li>
+            <li><a class="link-2" href="#">Front-end</a><div class="header-color--link" style="color: #00F3E5;"></div></li>
+            <li><a class="link-3" href="#">Data Science</a><div class="header-color--link" style="color: #9E00FF;"></div></li>
+            <li><a class="link-4" href="#">Devops</a><div class="header-color--link" style="color: #4F7AF2;"></div></li>
+            <li><a class="link-5" href="#">UX & Design</a><div class="header-color--link" style="color: #7639F9;"></div></li>
+            <li><a class="link-6" href="#">Mobile</a><div class="header-color--link" style="color: #E50087;"></div></li>
+        </ul>
+    </menu>
+
+    <section class="landing-curso">
+        <div class="content">
+            <h2 class="titulo">Estude <br> <span>Nome do curso</span></h2>
+            <p class="texto">Trabalhe com dados. Aprofunde seu conhecimento nas principais ferramentas de uma pessoa data scientist. Descubra as diferentes possibilidades de análise de dados, do Excel ao Python, e mergulhe em frameworks e bibliotecas, como Pandas, Scikit-Learn e Seaborn.
+            </p>
+
+            <a href="#">Conectar</a>
+        </div>
+        
+        <!-- <div class="imagem">
+            <img src="/Images/PROGRAMACAO.png" alt="">
+        </div> -->
+    </section>
+
+    <section class="motivos">
+        <h2 class="subtitle">Por que estudar ‘nome do curso’?</h2>
+
+        <div class="cards-motivos">
+            <div class="motivo">
+                <h1>1</h1>
+                <h2 class="sub-subtitle">Explore e crie</h2>
+                <p class="sub-texto">Explore a criação de modelos matemáticos para melhores tomadas de decisão.</p>
+            </div>
+
+            <div class="motivo">
+                <h1>2</h1>
+                <h2 class="sub-subtitle">Explore e crie</h2>
+                <p class="sub-texto">Explore a criação de modelos matemáticos para melhores tomadas de decisão.</p>
+            </div>
+
+            <div class="motivo">
+                <h1>3</h1>
+                <h2 class="sub-subtitle">Explore e crie</h2>
+                <p class="sub-texto">Explore a criação de modelos matemáticos para melhores tomadas de decisão.</p>
+            </div>
+        </div>
+    </section>
     
-</body>
+
+    <!-- JS link -->
+    <script type="text/javascript" src="/JS/script.js"></script>
+
+  </body>
 </html>
