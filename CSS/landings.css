@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-cursos {
+    width: 100%;
+    background: #240C5C;
+
+}
+
+.nav-cursos .cursos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 1rem 10%;
+    line-height: 2rem;
+}
+
+.nav-cursos .cursos li a {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 1rem;
+    transition: all .50s ease;
+}
+
+.nav-cursos .cursos li a:hover {
+    opacity: 70%;
+}
+
+.header-color--link {
+    border-bottom: 2px solid;
+    width: 15px;
+    margin-left: 1rem;
+    margin-top: -5px;
+}
+
+.landing-curso {
+    width: 100%;
+    background-image: url(/Images/bannerprogramacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-curso .content {
+    padding: 3rem;
+}
+
+.texto {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.titulo {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.titulo span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.sub-subtitle {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.sub-texto {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.landing-curso .content .texto {
+    margin: 0.8rem 0 3.5rem 0;
+}
+
+.landing-curso .content a {
+    padding: 0.5rem 2.3rem;
+    background:  #9E00FF;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: all .50s ease;
+}
+
+.landing-curso .content a:hover {
+    box-shadow: 0px 4px 8px 2px rgba(255, 0, 245, 0.3);
+}
+
+.motivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.3rem 4rem;
+    background: #240C5C;
+}
+
+.motivos .subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sublime {
+    border-bottom: 2px solid;
+    width: 50%;
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+.motivos .cards-motivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.motivos .cards-motivos .motivo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.motivos .cards-motivos .sub-subtitle {
+    margin: 20px 0 10px;
+}
+
+.motivos .cards-motivos .sub-texto {
+    text-align: center;
+    width: 80%;
+}
+
+.motivos .cards-motivos .number-card {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background:  #9E00FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px 2px rgba(255, 0, 245, 0.3);
+}
+
+.formacoes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px 3rem;
+}
+
+.formacoes .img-formacoes {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formacoes .img-formacoes .formacao-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    background-size: cover;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.formacoes .img-formacoes .formacao-card .card-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.8rem;
+    background:  #9E00FF;
+    backdrop-filter: blur(2.5px);
+}
+
+.formacoes .img-formacoes .formacao-card .card-content .sub-subtitle {
+    font-weight: 600;
+}
+
+.formacoes .img-formacoes .form-1 {
+    background-image: url(/Images/img-formacao1.png);
+}
+
+.formacoes .img-formacoes .form-2 {
+    background-image: url(/Images/img-formacao2.png);
+}
+
+.formacoes .img-formacoes .form-3 {
+    background-image: url(/Images/img-formacao3.png);
+}
+
+.formacoes .img-formacoes .form-4 {
+    background-image: url(/Images/img-formacao4.png);
+}
+
+.formacoes .content-formacoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0px 20px;
+    border-left: solid 1px rgba(255, 0, 245, 0.5);
+}
+
+.formacoes .content-formacoes .subtitle {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.professores {
+    background: rgba(36, 12, 92, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.professores .card-prof {
+    margin: 50px 0;
+}
+
+.professores .card-prof .card {
+    background: rgba(22, 13, 74, 0.5);
+    border-radius: 30px;
+    border: solid 1px rgba(158, 0, 255, 0.3);
+    height: 150px;
+    position: relative;
+    margin: 30px 0;
+    width: 350px;
+}
+
+.professores .card-prof .card .info-prof {
+    display: flex;
+    margin: 20px 30px;
+    align-items: center;
+}
+
+.professores .card-prof .card .info-prof img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.professores .card-prof .card .info-prof .nome h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.professores .card-prof .card .info-prof .nome h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.professores .card-prof .card .linkedin {
+    margin: 20px 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.professores .card-prof .card .linkedin a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    opacity: 70%;
+    transition: all .50s ease;
+}
+
+.professores .card-prof .card .linkedin a:hover {
+    opacity: 100%;
+}
+
+.professores .card-prof .card .linkedin a img {
+    margin: 0 5px 0 0;
+}
+
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.vantagens .vantagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    margin: 25px 0px;
+}
+
+.vantagens .vantagem img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.vantagens .vantagem h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .sub-subtitle {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1100px)  {
+    .nav-cursos .cursos li a {
+        font-size: 1rem;
+        margin: 0 2rem;
+    }
+
+    .header-color--link {
+        border-bottom: 2px solid;
+        width: 15px;
+        margin-left: 2rem;
+    }
+
+    .landing-curso {
+        height: none;
+    }
+
+    .landing-curso .content .texto {
+        width: 40%;
+    }
+
+    .texto {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .titulo span {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .landing-curso .content {
+        padding: 3rem 10rem;
+    }
+
+    .motivos .cards-motivos {
+        flex-direction: row;
+    }
+
+    .motivos .cards-motivos .sub-texto {
+        width: 70%;
+    }
+
+    .motivos .cards-motivos .motivo:nth-of-type(2) {
+        margin-top: 100px;
+    }
+
+    .formacoes {
+        flex-direction: row;
+        padding: 2.8rem;
+    }
+
+    .formacoes .img-formacoes {
+        width: 50%;
+    }
+
+    .formacoes .img-formacoes .formacao-card {
+        width: 230px;
+        height: 230px;
+        margin: 5px;
+    }
+
+    .formacoes .img-formacoes .formacao-card .card-content {
+        padding: 1.5rem;
+    }
+
+    .formacoes .content-formacoes {
+        width: 30%;
+    }
+
+    .formacoes .content-formacoes .subtitle {
+        font-size: 2rem;
+    }
+
+    .formacoes .content-formacoes .sub-texto {
+        font-size: 1rem;
+    }
+
+    .professores .card-prof {
+        display: flex;
+        gap: 30px;
+    }
+
+    .vantagens .cards-vantagem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .vantagens .vantagem h2 {
+        font-size: 1rem;
+    }
+}

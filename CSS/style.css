@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -5,74 +9,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.nav-cursos {
-    width: 100%;
-    background: #240C5C;
-
-}
-
-.nav-cursos .cursos {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    word-break: keep-all;
-    white-space: nowrap;
-    padding: 1rem 10%;
-    line-height: 2rem;
-}
-
-.nav-cursos .cursos li a {
-    font-size: 0.9rem;
-    flex-wrap: wrap;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0 1rem;
-    transition: all .50s ease;
-}
-
-.nav-cursos .cursos li a:hover {
-    opacity: 70%;
-}
-
-.header-color--link {
-    border-bottom: 2px solid;
-    width: 15px;
-    margin-left: 1rem;
-    margin-top: -5px;
-}
-
-.landing-curso {
-    width: 100%;
-    background-image: url(/Images/bannerprogramacao.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.landing-curso .content {
-    padding: 3rem;
-}
-
 .texto {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .titulo {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.titulo span {
     font-size: 2rem;
     font-weight: 700;
 }
@@ -93,144 +35,283 @@
     font-weight: 400;
 }
 
-.landing-curso .content .texto {
-    margin: 0.8rem 0 3.5rem 0;
+
+.sublime {
+    border-bottom: 2px solid;
+    width: 30%;
+    margin-bottom: 60px;
+    margin-top: 5px;
 }
 
-.landing-curso .content a {
+.landing {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing .content-landing a {
     padding: 0.5rem 2.3rem;
     background: #FF00F5;
     border-radius: 50px;
     color: #fff;
     font-weight: 600;
-    margin-top: 2rem;
 }
 
-/* .landing-curso .content a:hover {
-    transform: translateY(42px);
+/* .landing .content-landing a:hover {
+    transform: translateY(-10px);
 } */
 
-.motivos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.3rem 4rem;
-    background: #240C5C;
+.landing .content-landing h2 {
+    margin-bottom: 0.6rem;
 }
 
-.motivos .subtitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.landing .content-landing p {
+    margin-bottom: 2.5rem;
 }
 
-.sublime {
-    border-bottom: 2px solid;
-    width: 50%;
-    margin-bottom: 60px;
-    margin-top: 5px;
-}
-
-.motivos .cards-motivos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.motivos .cards-motivos .motivo {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    align-items: center;
-}
-
-.motivos .cards-motivos .sub-subtitle {
-    margin: 20px 0 10px;
-}
-
-.motivos .cards-motivos .sub-texto {
-    text-align: center;
-    width: 80%;
-}
-
-.motivos .cards-motivos .number-card {
-    width: 35px;
-    height: 35px;
-    border-radius: 10px;
-    background: #FF00F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 8px 2px rgba(255, 0, 245, 0.3);;
-}
-
-.formacoes {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0px 3rem;
-}
-
-.formacoes .img-formacoes {
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.formacoes .img-formacoes .formacao-card {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    background-size: cover;
-    overflow: hidden;
-    margin: 20px;
-}
-
-.formacoes .img-formacoes .formacao-card .card-content {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.landing .img-landing {
     width: 100%;
-    padding: 2rem;
-    background: rgba(255, 0, 245, 0.4);
-    backdrop-filter: blur(2.5px);
 }
 
-.formacoes .img-formacoes .formacao-card .card-content .sub-subtitle {
+.landing .img-landing img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seta-baixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.seta-baixo img {
+    padding: 0.8rem;
+    border-radius: 50px;
+    background: #6805B7;
+    box-shadow: 0px 4px 10px 1px rgba(158, 0, 255, 0.3);
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.cursos .content-cursos {
+    background: #6805B7;
+    padding: 4rem 1.5rem;
+    border-radius: 0 30px 30px 0;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 85%;
+}
+
+.cursos .content-cursos .subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.cursos .content-cursos .sub-texto {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2.5rem;
+}
+
+.cursos .content-cursos a {
+    padding: 0.5rem 1.6rem;
+    border-radius: 50px;
+    color: #fff;
     font-weight: 600;
+    border: solid 1px #fff;
+    width: 110px;
+    display: flex;
+    transition: all .2s ease;
 }
 
-.formacoes .img-formacoes .form-1 {
-    background-image: url(/Images/img-formacao1.png);
 
+.cursos .content-cursos a:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.formacoes .img-formacoes .form-2 {
-    background-image: url(/Images/img-formacao2.png);
+.cursos .content-cursos a img {
+    margin-left: 10px;
+    justify-content: center;
 }
 
-.formacoes .img-formacoes .form-3 {
-    background-image: url(/Images/img-formacao3.png);
+
+.cursos .cards-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0rem 0rem;
 }
 
-.formacoes .img-formacoes .form-4 {
-    background-image: url(/Images/img-formacao4.png);
+.cursos .cards-cursos .card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.formacoes .content-formacoes {
+.cursos .cards-cursos .card img {
+    width: 200px;
+}
+
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    align-items: center;
+}
+
+.vantagens .titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    padding: 0px 20px;
-    border-left: solid 1px rgba(255, 0, 245, 0.5);
+    text-align: center;
 }
 
-.formacoes .content-formacoes .subtitle {
-    margin-bottom: 10px;
+.vantagens .cards-vantagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 70%;
+    padding: 0rem 1.5rem;
+}
+
+.vantagens .cards-vantagens .vantagem .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background: #0C043D;
+    margin-bottom: 15px;
+}
+
+.vantagens .cards-vantagens .vantagem .sub-subtitle {
+    margin-bottom: 7px;
+}
+
+.metodos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    align-items: center;
+    background: #6805B7;
+}
+
+.metodos .title-metodo .sub-texto {
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(158, 0, 255, 1), 
+      rgba(158, 0, 255, 0)) 1 100%;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.metodos .cards-metodo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.metodos .cards-metodo .metodo {
+    background: linear-gradient(143.83deg, rgba(158, 0, 255, 0.3) 15.21%, rgba(158, 0, 255, 0) 113.73%);
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 3rem 1.5rem;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.metodos .cards-metodo .metodo img {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.metodos .cards-metodo .metodo .sub-subtitle {
+    font-size: 1.3rem;
+}
+
+.metodos .cards-metodo .metodo .sub-texto {
+    font-size: 0.9rem;
+    margin: 10px 0px;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.depoimentos .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.depoimentos img {
+    width: 100%;
+}
+
+.conexoes {
+    background: #6805B7;
+}
+
+.conexoes .img-conexoes img {
+    width: 100%;
+}
+
+.conexoes .content-conexoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.5rem 3rem;
+}
+
+.conexoes .content-conexoes span {
+    color: #00F3E5;
+}
+
+.conexoes .content-conexoes .sub-texto {
+    margin: 10px 0 30px 0;
+}
+
+.conexoes .content-conexoes a {
+    padding: 0.5rem 1.6rem;
+    border-radius: 50px;
+    color: #fff;
+    background: #9E00FF;
+    font-weight: 600;
+    width: 120px;
+    display: flex;
+    transition: all .2s ease;
+}
+
+.conexoes .content-conexoes a:hover {
+    background: rgba(158, 0, 255, 0.6);
 }
 
 
@@ -247,89 +328,96 @@
     }
 }
 
-@media (min-width: 1100px)  {
-    .nav-cursos .cursos li a {
-        font-size: 1rem;
-        margin: 0 2rem;
+@media (min-width: 1100px) {
+
+    .sublime {
+        width: 15%;
     }
 
-    .header-color--link {
-        border-bottom: 2px solid;
-        width: 15px;
-        margin-left: 2rem;
+    .landing {
+        padding: 0rem 8rem;
+        flex-direction: row;
+        align-items: center;
     }
 
-    .landing-curso {
-        height: none;
-    }
-
-    .landing-curso .content .texto {
+    .landing .content-landing {
         width: 40%;
+        margin-right: 50px;
     }
 
-    .texto {
-        font-size: 1rem;
-        font-weight: 500;
+    .landing .img-landing {
+        width: 60%;
     }
 
-    .titulo {
-        font-size: 1.3rem;
-        font-weight: 500;
+    .landing .img-landing img {
+        width: 95%;
     }
 
-    .titulo span {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    .landing-curso .content {
-        padding: 3rem 10rem;
-    }
-
-    .motivos .cards-motivos {
+    .cursos {
         flex-direction: row;
+        align-items: center;
     }
 
-    /* .motivos .cards-motivos .motivo {
-        width: 30%;
-    } */
-
-    .motivos .cards-motivos .sub-texto {
-        width: 70%;
+    .cursos .content-cursos a {
+        max-width: 22%;
     }
 
-    .motivos .cards-motivos .motivo:nth-of-type(2) {
-        margin-top: 100px;
+    .cursos .content-cursos {
+        width: 80%;
     }
 
-    .formacoes {
+    .cursos .cards-cursos {
+        padding: 0rem 8rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cursos .cards-cursos .card img {
+        width: 170px;
+    }
+
+    .vantagens .cards-vantagens {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3rem 0rem;
+        width: 90%;
+        gap: 70px;
+    }
+
+    .metodos .title-metodo {
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+
+    .metodos .title-metodo .subtitle {
+        width: 80%;
+        margin-right: 120px;
+    }
+
+    .metodos .cards-metodo {
         flex-direction: row;
-        padding: 4rem;
+        
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    .formacoes .img-formacoes {
+    .depoimentos .titulo {
         width: 50%;
     }
 
-    .formacoes .img-formacoes .formacao-card {
-        width: 230px;
-        height: 230px;
-        margin: 5px;
+    .depoimentos img {
+        width: 60%;
     }
 
-    .formacoes .img-formacoes .formacao-card .card-content {
-        padding: 1.5rem;
+    .conexoes {
+        display: flex;
     }
 
-    .formacoes .content-formacoes {
+    .conexoes .img-conexoes {
+        width: 60%;
+    }
+
+    .conexoes .content-conexoes {
         width: 30%;
-    }
-
-    .formacoes .content-formacoes .subtitle {
-        font-size: 2rem;
-    }
-
-    .formacoes .content-formacoes .sub-texto {
-        font-size: 1rem;
     }
 }

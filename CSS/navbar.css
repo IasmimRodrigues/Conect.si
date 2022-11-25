@@ -99,6 +99,19 @@ header {
     display: none;
 }
 
+footer {
+    background: #07002D;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 @media (max-width: 1280px) {
     header {
         padding: 14px 2%;
