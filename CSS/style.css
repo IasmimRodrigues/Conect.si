@@ -56,11 +56,12 @@ body {
     border-radius: 50px;
     color: #fff;
     font-weight: 600;
+    transition: all 0.4s ease-in-out;
 }
 
-/* .landing .content-landing a:hover {
-    transform: translateY(-10px);
-} */
+.landing .content-landing a:hover {
+    box-shadow: 0px 4px 10px 2px rgba(255, 0, 245, 0.2);
+}
 
 .landing .content-landing h2 {
     margin-bottom: 0.6rem;
